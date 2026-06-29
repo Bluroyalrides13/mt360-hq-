@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mt360-hq
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
